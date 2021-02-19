@@ -1,3 +1,5 @@
+name: SSH
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,5 +18,4 @@ jobs:
      - name: Don't kill instace
        if: ${{ failure() }}
        run: sleep 8h
-
 
